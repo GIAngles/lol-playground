@@ -17,10 +17,10 @@ describe('Meta API', function() {
     });
 });
 
-describe('Heroes API', function() {
+describe('Champions API', function() {
 
     it('should respond with JSON', function(done) {
-        api.get('/heroes')
+        api.get('/champions')
            .set('Accept', 'application/json')
            .expect(200)
            .end(function(err, res) {
