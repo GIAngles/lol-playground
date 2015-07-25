@@ -1,13 +1,14 @@
 # League of Legends Playground
 
-# Run Test
+# Build
 
-Dependencies
+## Dependencies
 ```
+npm install
 npm install -g mocha
 ```
 
-Run
+## Run Test
 
 ```
 npm test
