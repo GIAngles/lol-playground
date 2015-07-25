@@ -1,11 +1,10 @@
 var http = require("http");
+var url = require("url");
 
-function start() {
+function start(route,handle) {
     function onRequest(request, response) {
-        console.log("Request received");
-        response.writeHead(200,{"content-type":"application/json"});
-        response.write("Welcome you to the node server");
-        response.end();
+        var pathname = url.parse(request.url).pathname;
+        route(handle, pathname, response);
     }
     http.createServer(onRequest).listen(8008);
 }
