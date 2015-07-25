@@ -1,6 +1,8 @@
 var supertest = require('supertest');
 var api = supertest('http://localhost:8008');
 
+require('../index.js');
+
 describe('Meta API', function() {
 
     it('should at least reponse when request the root path', function(done) {
