@@ -9,6 +9,6 @@ function start() {
     }
     http.createServer(onRequest).listen(8008);
 }
-console.log("Server started");
+console.log("Server started: enjoy!");
 
 exports.start = start;
