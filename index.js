@@ -1,6 +1,6 @@
-var router = require("./route");
-var server = require("./server");
-var requestHandlers = require("./requestHandlers");
+var router = require("./server/route");
+var server = require("./server/server");
+var requestHandlers = require("./server/requestHandlers");
 
 var handle = {};
 handle["/"] = requestHandlers.sayHello;

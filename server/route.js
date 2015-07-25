@@ -1,9 +1,11 @@
 function route(handle, pathname, response) {
   console.log("Request route path:" + pathname);
   if(typeof handle[pathname] === 'function') {
-    return handle[pathname](response);
+    handle[pathname](response);
   } else {
-    return "No request handler for path: " +pathname;
+    response.writeHead(200,{"Content-Type":"application/json"});
+    response.write("No request handler for path: " +pathname);
+    response.end();
   }
 }
 exports.route = route;
