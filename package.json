@@ -3,11 +3,8 @@
   "version": "1.0.0",
   "description": "League of Legends API, made by the Simsol Pirate Team",
   "main": "index.js",
-  "dependencies": {
-      "mocha": "2.2.5"
-  },
   "scripts": {
-    "test": "mocha test/*.js"
+    "test": "mocha --reporter nyan test/*.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/GIAngles/lol-playground/issues"
   },
-  "homepage": "https://github.com/GIAngles/lol-playground#readme"
+  "homepage": "https://github.com/GIAngles/lol-playground#readme",
+  "devDependencies": {
+    "supertest": "^1.0.1"
+  }
 }
